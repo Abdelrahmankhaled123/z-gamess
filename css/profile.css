@@ -1,0 +1,120 @@
+html {
+    font-family: 'Roboto', sans-serif;
+ }
+ .header a,
+ .search  {
+     display: inline-block;
+ }
+ .header {
+     display: flex;
+     justify-content: space-between;
+     background-color: white;
+     height: 35px;
+ }
+ .header a,
+ .text {
+     text-decoration: none;
+     font-size: 130%;
+     color: black;
+     top: 5px;
+     position: relative;
+ }
+ .header input {
+     padding: 5px;
+     border-radius: 10px;
+     width: 300px;
+     text-align: center;
+     font-size: 120%;
+     position: relative;
+ }
+ #se {
+     position: absolute;
+     z-index: 2;
+     margin: 10px;
+ } 
+.body {
+    margin: 20px auto;
+    padding: 20px;
+    width: 1000px;
+    height: 700px;
+}
+.imgpro {
+    position: relative;
+    left: 400px;
+}
+label {
+    background-color: lime;
+      position: relative;
+      border-radius: 20px;
+      padding: 10px;
+      color: white;
+      font-size: 120%;
+      box-shadow: 0px 0px 6px 0px black;
+      cursor: pointer;
+  }
+  form input {
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 120%;
+  }
+#ph,
+#ag,
+#user,
+#em,
+#pas,
+#co {
+  position: absolute;
+  margin: 25px 10px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+form div {
+    margin: 10px auto;
+}
+.part2 p {
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+}
+.images {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.box {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    transition: 2s;
+    transform-style: preserve-3d;
+    color: white;
+}
+
+.box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    backface-visibility: hidden;
+  }
+  .box .back {
+    transform: rotateY(180deg);
+    background-color:black;
+  }
+  .box:hover {
+    transform: rotateY(-180deg);
+  }
+  .background {
+    width: 100%;
+    height: 1250px;
+    background-image: linear-gradient(90deg, #00bcd47a, #6234b3);
+  }

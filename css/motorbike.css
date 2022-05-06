@@ -1,0 +1,207 @@
+/* container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* container */
+/* header */
+header {
+    background-color: #777; 
+    position: absolute;
+    width: 99%;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .z {
+    font-size: 40px;
+    position: relative;
+    font-weight: bold;
+}
+header .search {
+    position: relative;
+}
+header .search #se {
+    position: absolute;
+    color: #000000;
+    margin: 15px;
+    font-size: 22px;
+}
+header .container input {
+    padding: 10px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+}
+header .container a {
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    top: 7px;
+    color: black;
+}
+/* header */
+/* landing */
+.landing {
+    background-image: url(../img/cr.jpg);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+.landing .overlaw::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0,70%);
+}
+/* landing */
+/* anamition */
+.load {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 100px;
+
+  }
+  .load div {
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .load .two {
+    animation-delay: 0.3s;
+  }
+  .load .three {
+    animation-delay: 0.6s;
+  }
+  @keyframes up-and-down {
+    to {
+      opacity: 0.2;
+      transform: translateY(-20px);
+    }
+  }
+/* anamition */
+table {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 10px;
+    margin: 100px auto;
+}
+table {
+    width: 80%;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+table thead tr {
+    text-align: center;
+    font-size: 170%;
+
+}
+table tfoot a {
+    text-decoration: none;
+    width: 100%;
+    color: rgb(255 255 255);
+    padding: 10px;
+    background-color: #09ff09d1;
+    border-radius: 20px;
+}
+table tfoot td {
+    text-align: center;
+    padding: 15px;
+}
+tfoot {
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 170%;
+
+}
+td {
+    border: 2px solid rgb(0, 0, 0);
+}
+p{
+    color: #777;
+    font-size: 25px;
+    font-weight: bold;
+} 
+.M{
+    width: 75%;
+    text-align: center;
+    margin: 50px auto;
+}
+.table .container iframe {
+    margin: 50px auto;
+    width: 100%;
+}
+.footer {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    background-color: black;
+    width: fit-content;
+    color: white;
+    margin: 20px auto;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+footer {
+background-color: #777; 
+padding-top: 20px;
+padding-bottom: 20px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+footer .container i {
+    color: black;
+    margin-left: 40px;
+    position: relative;
+    top: 15px;
+    font-size: 35px;
+}
+footer .container .fp {
+    font-size: 50px;
+    font-weight: bold;
+}
+

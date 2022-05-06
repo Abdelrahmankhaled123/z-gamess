@@ -1,0 +1,293 @@
+/* start Glabal Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* end gloabal Rules */
+/* start header */
+.header {
+    padding: 20px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .icons {
+    width: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.container .links {
+    position: relative;
+}
+.container .links ul {
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: #f6f6f6;
+    z-index: 1;
+    top: calc(100% + 15px);
+    min-width: 200px;
+    padding: 0;
+    display: none;
+}
+.container .links .icons span {
+    background-color: black;
+    margin-bottom: 5px;
+    height: 2px;
+    transition: 0.3s;
+}
+.container .links .icons span:first-child {
+    width: 100%;
+}
+.container .links .icons span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+.container .links .icons span:last-child {
+    width: 100%;
+}
+.container .links:hover .icons span:nth-child(2) {
+    width: 100%;
+}
+.container .links ul li a {
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    transition: 1s;
+}
+.container .links li a {
+    border: 1px solid #ddd;
+}
+.container .links li a:hover {
+    padding-left: 25px;
+}
+.container .links ul::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #dfdfdf transparent;
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+    top: -20px;
+}
+.header .links:hover ul {
+    display: block;
+} 
+.header .container p{
+    font-weight: 800;
+    font-size: 120%;
+    margin: 0px;
+}
+/* end header */
+/* start  introduction  */
+.introduction {
+    background-image: url(../img/wp2724987.jpg);
+    background-size: cover;
+    height: calc(100vh - 63px);
+    position: relative;
+}
+.introduction .text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    max-width: 100%;
+}
+.introduction .text h1 {
+    margin: 0px;
+    font-weight: 800;
+    font-size: 50px;
+}
+.introduction .text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+/* end  introduction  */
+/* start anaimation  */
+.load {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 100px;
+
+  }
+  .load div {
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .load .two {
+    animation-delay: 0.3s;
+  }
+  .load .three {
+    animation-delay: 0.6s;
+  }
+  @keyframes up-and-down {
+    to {
+      opacity: 0.2;
+      transform: translateY(-20px);
+    }
+  }
+/* end anaimation  */
+/* ثوابت */
+.special-heading {
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0px;
+  text-align: center;
+  color: #ebeced;
+}
+/* ثوابت */
+/* start games */
+ .games .container .types-games {
+   display: grid;
+   grid-template-columns:repeat(auto-fill, minmax(300px , 1fr));
+   grid-gap: 30px;
+   margin: 100px auto;
+
+ }
+ .games .container .types-games .game {
+   padding: 20px;
+ }
+ .games .container .types-games .game img {
+   max-width: 100%;
+   width: 415px;
+   height: 233.03px;
+   transition: .5s;
+ }
+ .games .container .types-games .game a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: #afafaf;
+ } 
+ .games .container .types-games .game img:hover {
+    transform: scale(1.2,1.2); 
+ }
+ .box {
+  margin-top: 100px;
+ }
+ .box .row1,
+ .box .row2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+ .box .row1 {
+   margin-bottom:40px ;
+ }
+ .box .row2 {
+   top:80px;
+ }
+ .box p {
+  font-size: 25px;
+  font-weight: 800;
+ }
+ .box .row2 p {
+  position:relative;
+  left: 50px;
+ }
+/* end games */
+/* start footer  */
+.footer {
+  margin-top: 80px;
+  height: 70px;
+  background-color: #9e9e9e;
+  position: relative;
+}
+.footer .icon {
+    display: flex;
+    justify-content: flex-end;
+} 
+.footer .icon i {
+  padding: 10px;
+  margin: 5px;
+  font-size: 30px;
+}
+.footer p {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  font-size: 30px;
+  top: 20px;
+  font-weight: 800;
+}
+/* end footer  */
+/* about */
+.about .about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 30px;
+  margin-top:100px;
+  margin-bottom: 200px;
+
+}
+.about .about-content .col img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+.about .about-content .col h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.about .about-content .col p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #bdbdbd;
+}
+.about .about-content .col img:hover {
+  transform: scale(1.1);
+}
+
+/* about */
+
+
